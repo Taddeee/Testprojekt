@@ -1,6 +1,45 @@
-body {
-	background: black;
+*/div#outside {
+  background: white;
 }
-h1{
-	color: white;
+div#container {
+  background: white;
+  margin: auto;
+  width: 85%;
+  border: 0;
+  padding: 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
+div#upper {
+  background-color: white;
+  height: 70px;
+  text-align: right
+
+}
+div#head {
+  background: green;
+  height: 550px;
+}
+
+div#boty {
+  background: white;
+    height: 200px;
+
+}
+
+div#footer {
+  background: green;
+    height: 200px;
+
+}
+ul {
+      padding: 30px 0px 30px 10px solid white;
+      background: black;
+      text-align: right;
+}
+li {
+      display:inline;
+      padding: 0px 10px 0px 10px;
+      color:black;
+      
+}*/
