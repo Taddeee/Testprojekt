@@ -2,58 +2,60 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test project</title>
+        <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
 		<link rel="stylesheet" href="/stylesheets/global.min.css">
 
 
         <style>
-            div#outside {
+            .outside {  
                background: white;
             }
-            div#container {
+            .container {
                 background-color: white;
                 border-color: #D3D3D3;
+                position: relative;
             }
-            div#nav {
+            .nav {
                 background: white;
                 border: 0;
                 padding: 10px;
                 margin: 5px 0 0 50px;
-
             }
             
-            div#head {
+            .head {
                 background-image: url("images/headbg.jpg");
                 height: 550px;
                 text-align: center;
-                padding-top: 30px;
-                background-size:cover;
+                background-size:cover;   
+                position: relative;    /*! förälder, utgångspunkt*/
 
             }
 
-            div#boty {
+            .boty {
                 background: white;
                 height: 200px;
 
             }
 
-            div#footer {
-                background: green;
+            .footer {
+                background: white;
                 height: 200px;
             }
             img {
-                width:70px;
+                wclassth:70px;
                 height:70px;
                 border:0
+                vertical-align: middle;
 
             }
 
             ul {
-                padding: 30px 0px 30px 10px solid white;
+                padding: 30px 0px 30px 10px solclass white;
                 background: white;
                 text-align: right;
-
+                display: inline-block; 
+                float: right;
                   padding: 4px 0;
 
 
@@ -70,34 +72,42 @@
                 color: yellow;
 
             }
-            h2{
+            h2 {
                 color: white;
+            }
+            section {
+                position:absolute; /*utgångpunkt från förälsdern, denna är en child*/
+                top:50%; 
+                left:50%;   
+                transform: translate(-50%,-50%);
             }
 
 
         </style>
 	</head>
     <body>
-        <div id="outside">
-            <div id="container">
-                <div id="nav">
+        <div class="outside">
+            <div class="container">
+                <div class="nav">                        
+                <img src="images/logo.png" align="middle">
                     <ul>
-                        <li><img src="images/logo.png" align="left">
-                        <li><a href="#">About Me</li>
-                        <li><a href="#">Blog</li>
+                        <li><a href="#">About </a></li>
+                        <li><a href="#">Blog </a></li>
                     </ul>
                 </div>
-
-                <div id="head">
-                    <h1>HI MY NAME IS JOVIL HIEW</h1>
-                    <h2>I am an independent front-end developer from Sweden. I have a passion for coding & designing clean looking websites</h2>
+                <div class="head">
+                    <section>
+                        
+                        <h1>HI MY NAME IS JOVIL HIEW</h1>
+                        <h2>I am an independent front-end developer from Sweden. I have a passion for coding & designing clean looking websites</h2>
+                    </section>
                 </div>
 
-                <div id="boty">
+                <div class="boty">
 
                 </div>
 
-                <div id="footer">
+                <div class="footer">
 
                 </div>
 
