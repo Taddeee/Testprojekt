@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
+
         <style>
             .outside {  
                display: block;
@@ -50,14 +51,20 @@
                 background: white;
                 height: 200px;
             }
+
+
+            img {
+                width:70px;
+                height:70px;
+                position: relative;
+                top: 6px;
+                left: 20px;
+
+            }
             body {
                 font-family: 'Montserrat', sans-serif; 
                 background: #fff;
 
-            }
-            img {
-                width:70px;
-                height:70px;
             }
             ul {
 
@@ -77,11 +84,7 @@
                 font-size: 14px;
                 color:black;
                 list-style: none;
-                line-height: normal;
-
-
-
-              
+                line-height: normal;        
             }
             h1 {
                 color: yellow;
@@ -100,15 +103,33 @@
                 max-width: 600px;
                 text-align: center;
                 margin: 0 auto;
-
-
+            }
+            h3 {
+                text-transform: uppercase;
+                font-size: 24px;
+                color: #4C4C4C;
+                letter-spacing: 1px;
+                font-weight: 100;
+                text-align: center;
 
             }
-            section {
+            section.headcontainer {
                 position:absolute; /*utgångpunkt från förälsdern, denna är en child*/
                 top:50%; 
                 left:50%;   
                 transform: translate(-50%,-50%);
+            }
+            section.bootycontainer {
+                padding: 100px 15px;
+                overflow: hidden;
+                background: #fff;
+                max-width: 1110px;
+                margin: 0 auto;
+                display: block;
+                background-size: auto;
+                line-height: 20px;
+                text-align:center;
+
             }
             a {
                 color:#333;
@@ -131,6 +152,64 @@
                 font-size: 14px;
 
             }        
+            .comingsoon {
+                max-width: 500px;
+                margin: 0 auto;
+                text-align:left;
+                letter-spacing: 1px;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 2;
+                font-size: 14px;
+                color: #333333;
+                display: block;
+
+            }
+            .text {
+                font-weight: 600;
+                line-height: 1.4;
+                letter-spacing: 1px;
+                max-width: 600px;
+                margin:0 auto;
+                padding: 30px 0;
+                font-size: 18px;
+                color: white;
+            }
+            .img_wrapper {
+                width: 340px;
+                height: 270px;
+                display: table-cell;
+                vertical-align: middle;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .upcoming {
+                opacity: 0.5;
+            }
+            .box {
+                margin-bottom: 40px;
+                width: 20%;
+                float: left;
+                display: block;
+                font-size: 14px;
+                padding: 0 15px 0 15px;
+                position:relative;
+                width: 360px;
+            
+            }
+            .ballywho {
+                width: 100px;
+                height: 100px;
+                text-align: center;
+
+            }
+            .shrink {
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateZ(0);
+                box-shadow: 0 0 1px rgba(0 0 0 0);
+                backface-visibility:hidden;
+
+            }
 
 
 
@@ -142,14 +221,12 @@
                 <div class="nav">                        
                 <img src="images/logo.png">
                     <ul>
-
                         <li><a href="#">About me </a></li>
                         <li><a href="#" style="text-decoration: line-through;">Blog </a></li>
                     </ul>
                 </div>
                 <div class="head">
-                    <section>
-                        
+                    <section class="headcontainer"> 
                         <h1>HI MY NAME IS JOVIL HIEW</h1>
                         <h2>I am an independent front-end developer from Sweden. I have a passion for coding & designing clean looking websites 
                         </h2>
@@ -157,11 +234,31 @@
                 </div>
 
                 <div class="boty">
-
+                    <section class="botycontainer">   
+                        <h3>
+                            PREVIOUS WORK
+                        </h3>
+                        <div class="box">
+                            <a href="#" class="img_wrapper" style="background:#BEBEBE;">
+                                <img src="images/ballywho.png" class="ballywho shrink">
+                            </a>
+                            <div class="comingsoon">Ballywho</div>
+                        </div>
+                        <div class="box">
+                            <a href="#" class="img_wrapper upcoming" style="background:#2098d1;">
+                                <span class="text">Upcoming</span>
+                            </a>
+                            <div class="comingsoon">Comming Soon</div>
+                        </div>
+                        <div class="box">
+                            <a href="#" class="img_wrapper upcoming" style="background: rgb(190, 190, 190);">
+                                <span class="text">Upcoming</span>
+                            </a>
+                            <div class="comingsoon">Comming Soon</div>
+                        </div>
+                    </section>
                 </div>
-
                 <div class="footer">
-
                 </div>
 
             </div>
