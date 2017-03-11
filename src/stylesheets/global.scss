@@ -1,45 +1,111 @@
-*/div#outside {
-  background: white;
+body {
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 15px;
 }
 div#container {
-  background: white;
-  margin: auto;
-  width: 85%;
-  border: 0;
-  padding: 0;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  display: table-cell;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
 }
-div#upper {
-  background-color: white;
-  height: 70px;
-  text-align: right
-
+div#navbar {
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+  
 }
-div#head {
-  background: green;
-  height: 550px;
-}
-
-div#boty {
-  background: white;
-    height: 200px;
-
-}
-
-div#footer {
-  background: green;
-    height: 200px;
-
+.brand {
+  font-size: 18px;
 }
 ul {
-      padding: 30px 0px 30px 10px solid white;
-      background: black;
-      text-align: right;
-}
+  background: #262626;  
+  display: table-cell;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
 li {
-      display:inline;
-      padding: 0px 10px 0px 10px;
-      color:black;
-      
-}*/
+  float: left;
+  text-align: center;
+  padding: 18px 1px;
+}
+li a {
+  min-width: 140px;
+  display: block;
+  text-decoration: none;
+
+}
+a:visited {
+  color:#a5a5a5;
+}
+a:hover {
+  color:white;
+
+}
+.section1 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  background: red;
+  height: 500px;
+  margin: 0 auto;
+}
+img {
+  height: 200px;
+  width: 200px;
+  background: black;
+  border: 1px solid white;
+}
+.section2 {
+  display: -webkit-column;
+  display: column;
+  -webkit-align-items: center;
+  align-items:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  height: 500px;
+  text-align: left;
+  margin:auto;
+}
+.section3 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  background: green;
+  height: 500px;
+}
+.section4 {
+  display: -webkit-column;
+  display: column;
+  -webkit-align-items: center;
+  align-items:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  height: 500px;
+  text-align: left;
+  margin: auto;
+}
+h1 {
+  font-size: 56px;
+}
+.section-heading {
+  font-size: 21px;
+}
+.section-lead {
+  font-size: 14px;
+}
