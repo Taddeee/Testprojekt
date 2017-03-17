@@ -2,31 +2,40 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Test project</title>
+<title>Bootstrap start</title>
 <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="/stylesheets/global.min.css">
-<link rel="stylesheet" href="../stylesheets/global.scss">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-
-<div class="navbar fixed-top navbar-inverse">
-    <div class="nav-header">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-    </div>
-    <div class="nav">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</div>
-<header class="image-bg-fluid-height img-responsiv">
+<nav class="navbar navbar-inverse fixed-top">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<header class="image-bg-fluid-height">
     <img class="img-center" src="http://placehold.it/200x200&text=Logo">
 </header>
+
 <section>
-    <div class="contatiner">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">Section Heading</h1>
@@ -39,7 +48,7 @@
 </section>
 <aside class="image-bg-fixed-height"></aside>
 <section>
-    <div class="contatiner">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">Section Heading</h1>
@@ -50,7 +59,17 @@
         </div>
     </div>
 </section>
-
+<section>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright © Your Website 2014</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 <script src="/javascripts/app.min.js"></script>
 </body> 
 </html>

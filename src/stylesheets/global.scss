@@ -1,117 +1,33 @@
 body {
-  margin: 0 auto;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 14px;
-
-}
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid
-}
-.navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
-}
-.navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .fixed-top {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 1030;
-}
-.nav-header {
-
-}
-.nav {
-
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-}
-li {
-  float: left;
-}
-li a {
-    display: block;
-    color: #9d9d9d;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-
-}
-a {
-  text-decoration: none;
-}
-a:visited {
-  color:#9d9d9d;
-}
-a:hover {
-  color:white;
+  width: 100%;
 }
 .image-bg-fluid-height {
-  background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
-  display: block;
-  text-align: center;
-  padding: 100px 0;
+    background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+    text-align: center;
+    padding: 100px 0;
+
 }
 .image-bg-fixed-height {
-  background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
-  height: 450px;
-}
-.img-responsiv {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.img-center {
-  margin: 0 auto;
+    background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll; 
+    height: 450px;
 }
 section {
-  padding: 75px 0;
+    padding: 75px 0;
 }
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.row {
-    margin-right: 15px;
-    margin-left: 15px;
-}
-.col-lg-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    box-sizing: border-box;
+.navbar {
+    border-radius: 0;
+    background: #222;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
 }
 .section-heading {
     margin: 30px 0;
     font-size: 4em;
-}
-.lead {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.4;
-}
-.section-lead {
-    margin: 30px 0;
-}
-.section-paragraph {
-    margin: 30px 0;
 }
