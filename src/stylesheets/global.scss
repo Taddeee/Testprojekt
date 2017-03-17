@@ -1,111 +1,117 @@
 body {
   margin: 0 auto;
-  color: black;
-  text-align: center;
-  font-family: helvetica;
-  font-size: 15px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+
 }
-div#container {
-  display: table-cell;
-  margin: 0 auto;
-  text-align: center;
-  width: 75%;
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid
 }
-div#navbar {
-  width: 100%;
-  display: table;
-  margin: 0 auto;
-  text-align: center;
-  float: left;
-  
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
 }
-.brand {
-  font-size: 18px;
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
 }
-ul {
-  background: #262626;  
-  display: table-cell;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.fixed-top {
   position: fixed;
   top: 0;
   width: 100%;
-  }
-li {
-  float: left;
-  text-align: center;
-  padding: 18px 1px;
+  z-index: 1030;
 }
-li a {
-  min-width: 140px;
-  display: block;
-  text-decoration: none;
+.nav-header {
 
 }
+.nav {
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+li {
+  float: left;
+}
+li a {
+    display: block;
+    color: #9d9d9d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+a {
+  text-decoration: none;
+}
 a:visited {
-  color:#a5a5a5;
+  color:#9d9d9d;
 }
 a:hover {
   color:white;
-
 }
-.section1 {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items:center;
-  -webkit-justify-content:center;
-  justify-content:center;
-  background: red;
-  height: 500px;
+.image-bg-fluid-height {
+  background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+  display: block;
+  text-align: center;
+  padding: 100px 0;
+}
+.image-bg-fixed-height {
+  background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+  height: 450px;
+}
+.img-responsiv {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-center {
   margin: 0 auto;
 }
-img {
-  height: 200px;
-  width: 200px;
-  background: black;
-  border: 1px solid white;
+section {
+  padding: 75px 0;
 }
-.section2 {
-  display: -webkit-column;
-  display: column;
-  -webkit-align-items: center;
-  align-items:center;
-  -webkit-justify-content:center;
-  justify-content:center;
-  height: 500px;
-  text-align: left;
-  margin:auto;
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.section3 {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items:center;
-  -webkit-justify-content:center;
-  justify-content:center;
-  background: green;
-  height: 500px;
+.row {
+    margin-right: 15px;
+    margin-left: 15px;
 }
-.section4 {
-  display: -webkit-column;
-  display: column;
-  -webkit-align-items: center;
-  align-items:center;
-  -webkit-justify-content:center;
-  justify-content:center;
-  height: 500px;
-  text-align: left;
-  margin: auto;
-}
-h1 {
-  font-size: 56px;
+.col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
 }
 .section-heading {
-  font-size: 21px;
+    margin: 30px 0;
+    font-size: 4em;
+}
+.lead {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
 }
 .section-lead {
-  font-size: 14px;
+    margin: 30px 0;
+}
+.section-paragraph {
+    margin: 30px 0;
 }
